@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aruth.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="680.0" prefWidth="650.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@aruth-logo.png" />
+               </image>
+            </ImageView>
+            <Button id="search_button" fx:id="search_button" layoutX="487.0" layoutY="251.0" mnemonicParsing="false" onAction="#click" prefHeight="60.0" prefWidth="139.0" style="-fx-background-color: #13a89e;" text="Search" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Text fill="#13a89e" layoutX="42.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aruth is a tool for Sinhala word sense disambiguation. This is a research project carried out by the  Department of Computer Science and Engineering  , University of Moratuwa , Sri Lanka." textAlignment="CENTER" wrappingWidth="437.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <TextField fx:id="textContext" alignment="TOP_LEFT" layoutX="42.0" layoutY="111.0" onAction="#click" prefHeight="89.0" prefWidth="580.0" promptText="Your context goes here....">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <TextField fx:id="textWord" layoutX="42.0" layoutY="262.0" onAction="#click" prefHeight="38.0" prefWidth="283.0" promptText="Word to disambiguate goes here..." />
+            <ImageView fitHeight="79.0" fitWidth="86.0" layoutX="471.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="479.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cse-logo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="570.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@uom-logo.png" />
+               </image></ImageView>
+            <Hyperlink layoutX="471.0" layoutY="24.0" text="Aruth.lk" textFill="#13a89e">
+               <font>
+                  <Font name="Calibri" size="22.0" />
+               </font>
+            </Hyperlink>
+            <Text fx:id="output" layoutX="49.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="561.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
